@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="PKHealthScience is a modern educational platform for learning health science concepts, topics, and study materials."
+    >
+
+    <title>PKHealthScience | Health Science Education</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="site-header" id="header">
+
+        <div class="container nav-container">
+
+            <!-- Logo -->
+            <a href="index.html" class="logo" aria-label="PKHealthScience Home">
+                <span class="logo-icon">
+                    <i class="fa-solid fa-book-medical"></i>
+                </span>
+
+                <span class="logo-text">
+                    <strong>PKHealth</strong><span>Science</span>
+                </span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav" aria-label="Main navigation">
+                <a href="pages/consultation.html" class="nav-link">Consultation</a>
+                <a href="pages/courses.html" class="nav-link">Courses</a>
+                <a href="#topics" class="nav-link">Topics</a>
+                <a href="#materials" class="nav-link">Study Materials</a>
+                <a href="#quiz" class="nav-link">Quizzes</a>
+                <a href="pages/registration.html" class="nav-link">Registration</a>
+                <a href="pages/student-verification.html" class="nav-link"> Student Verification</a>
+                <a href="pages/application.html" class="nav-link">Application</a>
+                <a href="pages/about.html" class="nav-link">About</a></nav>
+
+            <!-- Desktop Actions -->
+            <div class="nav-actions">
+                <a href="pages/login.html" class="login-link">Login</a>
+                <a href="pages/signup.html" class="signup-btn">Sign Up</a>
+            </div>
+
+            <!-- Hamburger -->
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="mobileMenu"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+    </header>
+
+
+    <!-- ================= MOBILE MENU ================= -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <aside
+        class="mobile-menu"
+        id="mobileMenu"
+        aria-label="Mobile navigation"
+        aria-hidden="true"
+    >
+
+        <div class="mobile-menu-header">
+
+            <a href="index.html" class="logo mobile-logo">
+                <span class="logo-icon">
+                    <i class="fa-solid fa-book-medical"></i>
+                </span>
+
+                <span class="logo-text">
+                    <strong>PKHealth</strong><span>Science</span>
+                </span>
+            </a>
+
+            <button
+                class="menu-close"
+                id="menuClose"
+                aria-label="Close navigation menu"
+                type="button"
+            >
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+        </div>
+
+        <nav class="mobile-nav">
+
+            <a href="index.html" class="mobile-nav-link active">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+
+            <a href="pages/consultation.html" class="mobile-nav-link">
+             <i class="fa-solid fa-comments"></i>
+            <span>Consultation</span>
+                </a>
+
+            <a href="pages/courses.html" class="mobile-nav-link">
+                <i class="fa-solid fa-book-open"></i>
+                <span>Courses</span>
+            </a>
+
+            <a href="#topics" class="mobile-nav-link">
+                <i class="fa-solid fa-flask"></i>
+                <span>Health Science Topics</span>
+            </a>
+
+            <a href="#materials" class="mobile-nav-link">
+                <i class="fa-solid fa-file-lines"></i>
+                <span>Study Materials</span>
+            </a>
+
+            <a href="#quiz" class="mobile-nav-link">
+                <i class="fa-solid fa-brain"></i>
+                <span>Quizzes</span>
+            </a>
+
+            <div class="mobile-divider"></div>
+
+            <a href="pages/registration.html" class="mobile-nav-link">
+    <i class="fa-solid fa-user-plus"></i>
+    <span>Registration</span>
+</a>
+
+<a href="pages/student-verification.html" class="mobile-nav-link">
+    <i class="fa-solid fa-user-check"></i>
+    <span>Student Verification</span>
+</a>
+
+<a href="pages/application.html" class="mobile-nav-link">
+    <i class="fa-solid fa-file-signature"></i>
+    <span>Application</span>
+</a>
+
+            <a href="pages/signup.html" class="mobile-nav-link">
+                <i class="fa-solid fa-user-plus"></i>
+                <span>Sign Up</span>
+            </a>
+
+            <a href="pages/contact.html" class="mobile-nav-link">
+                <i class="fa-solid fa-phone"></i>
+                <span>Contact</span>
+            </a>
+
+            <a href="pages/about.html" class="mobile-nav-link">
+                <i class="fa-solid fa-circle-info"></i>
+                <span>About</span>
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <main>
+
+        <!-- ================= HERO ================= -->
+        <section class="hero">
+
+            <div class="hero-overlay"></div>
+
+            <div class="container hero-content">
+
+                <div class="hero-badge">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    Health Science Education
+                </div>
+
+                <h1>
+                    Welcome to
+                    <span>Palkezex School Of HealthScience</span>
+                </h1>
+
+                <p class="hero-tagline">
+                    Learn. Understand. Explore. Advance in Health Science.
+                </p>
+
+                <p class="hero-description">
+                    Explore accessible educational resources designed to help
+                    students and learners understand important health-science
+                    concepts, subjects, and topics.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#topics" class="btn btn-primary">
+                        Explore Health Science
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="#journey" class="btn btn-secondary">
+                        Start Learning
+                        <i class="fa-solid fa-book-open"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-scroll">
+                <span>Explore</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+
+        </section>
+
+
+        <!-- ================= INTRO ================= -->
+        <section class="intro section">
+
+            <div class="container intro-grid">
+
+                <div class="intro-content reveal">
+
+                    <span class="section-label">WELCOME TO PKHEALTHSCIENCE</span>
+
+                    <h2>
+                        Build Your Understanding
+                        of Health Science
+                    </h2>
+
+                    <p>
+                        Health science covers a wide range of subjects that
+                        help us understand the human body, diseases, medicines,
+                        microorganisms, public health, and healthcare.
+                    </p>
+
+                    <p>
+                        PKHealthScience brings these areas together in an
+                        accessible educational environment for students and
+                        curious learners.
+                    </p>
+
+                    <a href="#topics" class="text-link">
+                        Explore subjects
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+                <div class="intro-visual reveal">
+
+                    <div class="science-card main-science-card">
+                        <div class="science-icon">
+                            <i class="fa-solid fa-dna"></i>
+                        </div>
+
+                        <h3>Explore Knowledge</h3>
+
+                        <p>
+                            Discover the science behind the human body and
+                            healthcare.
+                        </p>
+                    </div>
+
+                    <div class="floating-card floating-card-one">
+                        <i class="fa-solid fa-microscope"></i>
+                        <span>Science</span>
+                    </div>
+
+                    <div class="floating-card floating-card-two">
+                        <i class="fa-solid fa-book"></i>
+                        <span>Learning</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= TOPICS ================= -->
+        <section class="topics section light-section" id="topics">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <div>
+                        <span class="section-label">EXPLORE</span>
+
+                        <h2>Explore Health Science</h2>
+
+                        <p>
+                            Start exploring essential health-science subjects
+                            and build your knowledge step by step.
+                        </p>
+                    </div>
+
+                    <a href="pages/courses.html" class="outline-btn">
+                        View All
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+
+                <div class="topic-grid">
+
+                    <!-- Anatomy -->
+                    <article class="topic-card reveal">
+                        <div class="topic-icon">
+                            <i class="fa-solid fa-person"></i>
+                        </div>
+
+                        <h3>Anatomy</h3>
+
+                        <p>
+                            Explore the structures and organization of the
+                            human body.
+                        </p>
+
+                        <a href="#" class="card-link">
+                            Learn More
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+
+
+                    <!-- Physiology -->
+                    <article class="topic-card reveal">
+                        <div class="topic-icon">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+
+                        <h3>Physiology</h3>
+
+                        <p>
+                            Understand how organs, tissues, and body systems
+                            function.
+                        </p>
+
+                        <a href="#" class="card-link">
+                            Learn More
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+
+
+                    <!-- Pharmacology -->
+                    <article class="topic-card reveal">
+                        <div class="topic-icon">
+                            <i class="fa-solid fa-pills"></i>
+                        </div>
+
+                        <h3>Pharmacology</h3>
+
+                        <p>
+                            Learn foundational concepts about medicines and
+                            their effects.
+                        </p>
+
+                        <a href="#" class="card-link">
+                            Learn More
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+
+
+                    <!-- Pathology -->
+                    <article class="topic-card reveal">
+                        <div class="topic-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+
+                        <h3>Pathology</h3>
+
+                        <p>
+                            Study disease processes and changes within the
+                            human body.
+                        </p>
+
+                        <a href="#" class="card-link">
+                            Learn More
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+
+
+                    <!-- Microbiology -->
+                    <article class="topic-card reveal">
+                        <div class="topic-icon">
+                            <i class="fa-solid fa-virus"></i>
+                        </div>
+
+                        <h3>Microbiology</h3>
+
+                        <p>
+                            Explore microorganisms and their relationship with
+                            health and disease.
+                        </p>
+
+                        <a href="#" class="card-link">
+                            Learn More
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+
+
+                    <!-- Biochemistry -->
+                    <article class="topic-card reveal">
+                        <div class="topic-icon">
+                            <i class="fa-solid fa-vials"></i>
+                        </div>
+
+                        <h3>Biochemistry</h3>
+
+                        <p>
+                            Discover the chemical processes that occur within
+                            living organisms.
+                        </p>
+
+                        <a href="#" class="card-link">
+                            Learn More
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+
+
+                    <!-- Public Health -->
+                    <article class="topic-card reveal">
+                        <div class="topic-icon">
+                            <i class="fa-solid fa-people-group"></i>
+                        </div>
+
+                        <h3>Public Health</h3>
+
+                        <p>
+                            Learn about health promotion, prevention, and
+                            population health.
+                        </p>
+
+                        <a href="#" class="card-link">
+                            Learn More
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+
+
+                    <!-- Nursing Science -->
+                    <article class="topic-card reveal">
+                        <div class="topic-icon">
+                            <i class="fa-solid fa-user-nurse"></i>
+                        </div>
+
+                        <h3>Nursing Science</h3>
+
+                        <p>
+                            Explore foundational concepts related to nursing
+                            and patient care.
+                        </p>
+
+                        <a href="#" class="card-link">
+                            Learn More
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= LEARNING JOURNEY ================= -->
+        <section class="journey section" id="journey">
+
+            <div class="container">
+
+                <div class="section-heading centered reveal">
+
+                    <span class="section-label">HOW IT WORKS</span>
+
+                    <h2>Your Learning Journey</h2>
+
+                    <p>
+                        A simple approach to help you move from curiosity to
+                        understanding.
+                    </p>
+
+                </div>
+
+
+                <div class="journey-grid">
+
+                    <div class="journey-card reveal">
+
+                        <div class="step-number">01</div>
+
+                        <div class="journey-icon">
+                            <i class="fa-solid fa-compass"></i>
+                        </div>
+
+                        <h3>Choose a Topic</h3>
+
+                        <p>
+                            Select a health-science subject that you want to
+                            explore.
+                        </p>
+
+                    </div>
+
+
+                    <div class="journey-card reveal">
+
+                        <div class="step-number">02</div>
+
+                        <div class="journey-icon">
+                            <i class="fa-solid fa-book-open-reader"></i>
+                        </div>
+
+                        <h3>Study the Materials</h3>
+
+                        <p>
+                            Read educational content and study the concepts
+                            at your own pace.
+                        </p>
+
+                    </div>
+
+
+                    <div class="journey-card reveal">
+
+                        <div class="step-number">03</div>
+
+                        <div class="journey-icon">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+
+                        <h3>Test Your Knowledge</h3>
+
+                        <p>
+                            Use quizzes and questions to check your
+                            understanding.
+                        </p>
+
+                    </div>
+
+
+                    <div class="journey-card reveal">
+
+                        <div class="step-number">04</div>
+
+                        <div class="journey-icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+
+                        <h3>Improve Your Understanding</h3>
+
+                        <p>
+                            Review difficult concepts and continue building
+                            your knowledge.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FEATURED CONTENT ================= -->
+        <section class="featured section light-section" id="materials">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <div>
+                        <span class="section-label">LEARN SOMETHING NEW</span>
+
+                        <h2>Featured Health Science Topics</h2>
+
+                        <p>
+                            Explore selected topics to begin your learning
+                            journey.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="featured-grid">
+
+                    <article class="featured-card reveal">
+
+                        <div class="featured-image anatomy-image">
+                            <i class="fa-solid fa-person"></i>
+                        </div>
+
+                        <div class="featured-content">
+
+                            <span class="content-category">ANATOMY</span>
+
+                            <h3>Human Anatomy</h3>
+
+                            <p>
+                                Learn about the structure and organization of
+                                the human body.
+                            </p>
+
+                            <a href="#" class="card-link">
+                                Explore Topic
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="featured-card reveal">
+
+                        <div class="featured-image physiology-image">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+
+                        <div class="featured-content">
+
+                            <span class="content-category">PHYSIOLOGY</span>
+
+                            <h3>Human Physiology</h3>
+
+                            <p>
+                                Understand how different body systems function
+                                and interact.
+                            </p>
+
+                            <a href="#" class="card-link">
+                                Explore Topic
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="featured-card reveal">
+
+                        <div class="featured-image microbiology-image">
+                            <i class="fa-solid fa-microscope"></i>
+                        </div>
+
+                        <div class="featured-content">
+
+                            <span class="content-category">MICROBIOLOGY</span>
+
+                            <h3>Microbiology</h3>
+
+                            <p>
+                                Explore microorganisms and their relationship
+                                with health.
+                            </p>
+
+                            <a href="#" class="card-link">
+                                Explore Topic
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="featured-card reveal">
+
+                        <div class="featured-image pharmacology-image">
+                            <i class="fa-solid fa-capsules"></i>
+                        </div>
+
+                        <div class="featured-content">
+
+                            <span class="content-category">PHARMACOLOGY</span>
+
+                            <h3>Pharmacology</h3>
+
+                            <p>
+                                Learn foundational principles about medicines
+                                and their effects.
+                            </p>
+
+                            <a href="#" class="card-link">
+                                Explore Topic
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <div class="center-button reveal">
+
+                    <a href="pages/courses.html" class="btn btn-primary">
+                        View All Topics
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= QUIZ CTA ================= -->
+        <section class="quiz-section section" id="quiz">
+
+            <div class="container">
+
+                <div class="quiz-box reveal">
+
+                    <div class="quiz-content">
+
+                        <span class="section-label">CHALLENGE YOURSELF</span>
+
+                        <h2>Ready to Test Your Knowledge?</h2>
+
+                        <p>
+                            Future PKHealthScience quizzes will help you
+                            review concepts and identify areas where you can
+                            improve.
+                        </p>
+
+                        <a href="#" class="btn btn-light">
+                            Explore Quizzes
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                    <div class="quiz-decoration">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= DISCLAIMER ================= -->
+        <section class="disclaimer section">
+
+            <div class="container">
+
+                <div class="disclaimer-box reveal">
+
+                    <div class="disclaimer-icon">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+
+                    <div>
+                        <h2>Educational Disclaimer</h2>
+
+                        <p>
+                            PKHealthScience provides educational information
+                            for learning purposes. The information on this
+                            website is not a substitute for professional
+                            medical advice, diagnosis, or treatment. Always
+                            consult a qualified healthcare professional for
+                            personal medical concerns.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <!-- Brand -->
+                <div class="footer-brand">
+
+                    <a href="index.html" class="logo footer-logo">
+
+                        <span class="logo-icon">
+                            <i class="fa-solid fa-book-medical"></i>
+                        </span>
+
+                        <span class="logo-text">
+                            <strong>PKHealth</strong><span>Science</span>
+                        </span>
+
+                    </a>
+
+                    <p>
+                        Health Science Education for Everyone.
+                    </p>
+
+                    <div class="social-links">
+
+                        <a href="#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="X">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+
+                        <a href="#" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Platform -->
+                <div class="footer-column">
+
+                    <h3>Platform</h3>
+
+                    <a href="index.html">Home</a>
+                    <a href="pages/courses.html">Courses</a>
+                    <a href="#topics">Topics</a>
+                    <a href="#materials">Study Materials</a>
+
+                </div>
+
+
+                <!-- Resources -->
+                <div class="footer-column">
+
+                    <h3>Resources</h3>
+
+                    <a href="#quiz">Quizzes</a>
+                    <a href="pages/about.html">About</a>
+                    <a href="pages/contact.html">Contact</a>
+
+                </div>
+
+
+                <!-- Account -->
+                <div class="footer-column">
+
+                    <h3>Account</h3>
+
+                    <a href="pages/login.html">Login</a>
+                    <a href="pages/signup.html">Sign Up</a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © <span id="currentYear"></span>
+                    PKHealthScience. All rights reserved.
+                </p>
+
+                <p>
+                    Learn. Understand. Explore. Advance in Health Science.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Back to Top -->
+    <button
+        class="back-to-top"
+        id="backToTop"
+        aria-label="Back to top"
+    >
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
