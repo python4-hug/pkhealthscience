@@ -408,6 +408,18 @@ ul {
     margin: 12px 0;
 }
 
+@media (max-width: 650px) {
+
+    .hero-logo {
+        margin-bottom: 18px;
+    }
+
+    .hero-logo img {
+        width: 100px;
+        height: 100px;
+    }
+
+}
 
 /* =========================================================
    6. HERO
@@ -491,6 +503,43 @@ ul {
     gap: 13px;
 }
 
+/* ================= HERO LOGO ================= */
+
+/* ================= HERO LOGO ================= */
+
+.hero-logo {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto 25px;
+    padding: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ffffff;
+    border-radius: 50%;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
+}
+
+.hero-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+@media (max-width: 650px) {
+
+    .hero-logo {
+        width: 105px;
+        height: 105px;
+        padding: 12px;
+        margin-bottom: 20px;
+    }
+
+}
 
 /* Buttons */
 
