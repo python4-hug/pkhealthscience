@@ -1,4 +1,4 @@
-/* =========================================================
+/* =======================================================
    PKHEALTHSCIENCE
    Main Stylesheet
    ========================================================= */
@@ -1571,4 +1571,2649 @@ button:focus-visible {
         width: 42px;
         height: 42px;
     }
+}
+
+
+/* =========================================================
+   22. COURSES PAGE
+   ========================================================= */
+
+/* Courses Hero */
+.courses-hero {
+    padding: 110px 20px 90px;
+    background:
+        linear-gradient(
+            135deg,
+            var(--primary-light) 0%,
+            var(--white) 55%,
+            #eefaf7 100%
+        );
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+}
+
+.courses-hero-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.courses-icon {
+    width: 76px;
+    height: 76px;
+    margin: 0 auto 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-light);
+    color: var(--primary);
+    border-radius: 20px;
+    font-size: 2rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.courses-hero h1 {
+    margin: 14px 0 20px;
+    color: var(--navy);
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    line-height: 1.1;
+    letter-spacing: -2px;
+}
+
+.courses-hero h1 span {
+    color: var(--primary);
+}
+
+.courses-hero p {
+    max-width: 720px;
+    margin: 0 auto;
+    color: var(--muted);
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+/* Course Catalog */
+.courses-section {
+    padding: 90px 0;
+    background: var(--white);
+}
+
+.courses-heading {
+    max-width: 720px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.courses-heading h2 {
+    margin: 10px 0 12px;
+    color: var(--navy);
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.15;
+    letter-spacing: -1px;
+}
+
+.courses-heading p {
+    margin: 0 auto;
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+/* Course Grid */
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
+}
+
+/* Course Card */
+.course-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 420px;
+    padding: 30px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+    transition:
+        transform var(--transition),
+        box-shadow var(--transition),
+        border-color var(--transition);
+}
+
+.course-card:hover {
+    transform: translateY(-7px);
+    border-color: #b6dce1;
+    box-shadow: var(--shadow-md);
+}
+
+/* Course Number */
+.course-number {
+    position: absolute;
+    top: 20px;
+    right: 22px;
+    color: #a8bac2;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+/* Course Icon */
+.course-icon {
+    width: 62px;
+    height: 62px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-light);
+    color: var(--primary);
+    border-radius: 16px;
+    font-size: 1.45rem;
+}
+
+/* Course Content */
+.course-content {
+    flex: 1;
+}
+
+.course-category {
+    display: block;
+    margin-bottom: 9px;
+    color: var(--primary);
+    font-size: 0.72rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.course-card h3 {
+    margin: 0 0 13px;
+    color: var(--navy);
+    font-size: 1.22rem;
+    line-height: 1.4;
+}
+
+.course-card p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.92rem;
+    line-height: 1.7;
+}
+
+/* Course Button */
+.course-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 25px;
+    padding: 12px 18px;
+    border-radius: 10px;
+    background: var(--primary);
+    color: var(--white);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition:
+        background var(--transition),
+        transform var(--transition);
+}
+
+.course-button:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+.course-button i {
+    transition: transform var(--transition);
+}
+
+.course-button:hover i {
+    transform: translateX(4px);
+}
+
+/* Courses CTA */
+.courses-cta {
+    padding: 70px 0;
+    background: var(--light);
+}
+
+.courses-cta-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+}
+
+.courses-cta h2 {
+    margin: 10px 0;
+    color: var(--navy);
+    font-size: 2rem;
+}
+
+.courses-cta p {
+    max-width: 600px;
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+.cta-button {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px 22px;
+    border-radius: 10px;
+    background: var(--primary);
+    color: var(--white);
+    font-weight: 700;
+    text-decoration: none;
+    transition:
+        background var(--transition),
+        transform var(--transition);
+}
+
+.cta-button:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+/* Courses Responsive */
+@media (max-width: 1050px) {
+    .courses-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 850px) {
+    .courses-hero {
+        padding: 90px 0 70px;
+    }
+
+    .courses-section {
+        padding: 70px 0;
+    }
+
+    .courses-grid {
+        gap: 20px;
+    }
+
+    .courses-cta-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 650px) {
+    .courses-hero {
+        padding: 70px 0 60px;
+    }
+
+    .courses-hero h1 {
+        font-size: 2.3rem;
+        letter-spacing: -1.5px;
+    }
+
+    .courses-hero p {
+        font-size: 0.95rem;
+    }
+
+    .courses-section {
+        padding: 60px 0;
+    }
+
+    .courses-heading {
+        margin-bottom: 40px;
+    }
+
+    .courses-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .course-card {
+        min-height: 390px;
+        padding: 25px;
+    }
+
+    .courses-cta {
+        padding: 50px 0;
+    }
+
+    .courses-cta-content {
+        padding: 30px 24px;
+    }
+
+    .courses-cta h2 {
+        font-size: 1.65rem;
+    }
+
+    .cta-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 420px) {
+    .courses-hero h1 {
+        font-size: 2rem;
+    }
+
+    .courses-icon {
+        width: 65px;
+        height: 65px;
+        font-size: 1.6rem;
+    }
+
+    .course-card {
+        padding: 22px;
+    }
+}
+
+/* =========================================================
+   START LEARNING PAGE
+   ========================================================= */
+
+.start-learning-hero {
+    position: relative;
+    padding: 110px 20px 100px;
+    background:
+        linear-gradient(
+            135deg,
+            var(--primary-light),
+            var(--white)
+        );
+    overflow: hidden;
+}
+
+.start-learning-hero::before {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    right: -180px;
+    top: -180px;
+    border-radius: 50%;
+    background: rgba(0, 120, 255, 0.08);
+}
+
+.start-learning-hero::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: -150px;
+    bottom: -150px;
+    border-radius: 50%;
+    background: rgba(0, 120, 255, 0.06);
+}
+
+.start-learning-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.start-learning-icon {
+    width: 82px;
+    height: 82px;
+    margin: 0 auto 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    background: var(--white);
+    color: var(--primary);
+    font-size: 2rem;
+    box-shadow: var(--shadow-md);
+}
+
+.start-learning-label {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: var(--primary);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.start-learning-hero h1 {
+    margin: 0 auto 20px;
+    color: var(--navy);
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    line-height: 1.08;
+    font-weight: 800;
+}
+
+.start-learning-hero h1 span {
+    display: block;
+    color: var(--primary);
+}
+
+.start-learning-hero p {
+    max-width: 700px;
+    margin: 0 auto 32px;
+    color: var(--muted);
+    font-size: 1.08rem;
+    line-height: 1.8;
+}
+
+.start-learning-actions,
+.cta-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.start-primary-btn,
+.start-secondary-btn,
+.start-outline-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 52px;
+    padding: 0 24px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: var(--transition);
+}
+
+.start-primary-btn {
+    background: var(--primary);
+    color: var(--white);
+    box-shadow: var(--shadow-sm);
+}
+
+.start-primary-btn:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+.start-secondary-btn {
+    background: var(--white);
+    color: var(--navy);
+    border: 1px solid var(--border);
+}
+
+.start-secondary-btn:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+    transform: translateY(-2px);
+}
+
+
+/* ================= LEARNING STEPS ================= */
+
+.learning-steps {
+    padding: 100px 20px;
+    background: var(--white);
+}
+
+.start-section-heading {
+    max-width: 700px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.start-section-heading > span {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: var(--primary);
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.start-section-heading h2 {
+    margin: 0 0 15px;
+    color: var(--navy);
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.2;
+}
+
+.start-section-heading h2 strong {
+    color: var(--primary);
+}
+
+.start-section-heading p {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+.learning-steps-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.learning-step-card {
+    position: relative;
+    padding: 30px 25px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.learning-step-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary-light);
+}
+
+.learning-step-number {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: var(--primary-light);
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.learning-step-icon {
+    width: 58px;
+    height: 58px;
+    margin-bottom: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-light);
+    color: var(--primary);
+    border-radius: 14px;
+    font-size: 1.3rem;
+}
+
+.learning-step-card h3 {
+    margin: 0 0 12px;
+    color: var(--navy);
+    font-size: 1.1rem;
+}
+
+.learning-step-card p {
+    margin: 0 0 22px;
+    color: var(--muted);
+    font-size: 0.92rem;
+    line-height: 1.7;
+}
+
+.learning-step-card a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.learning-step-card a:hover {
+    gap: 12px;
+}
+
+
+/* ================= LEARNING AREAS ================= */
+
+.learning-areas {
+    padding: 100px 20px;
+    background: var(--light);
+}
+
+.learning-areas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.learning-area-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 25px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.learning-area-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.learning-area-icon {
+    flex: 0 0 52px;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-light);
+    color: var(--primary);
+    border-radius: 13px;
+    font-size: 1.15rem;
+}
+
+.learning-area-card h3 {
+    margin: 0 0 8px;
+    color: var(--navy);
+    font-size: 1rem;
+}
+
+.learning-area-card p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.88rem;
+    line-height: 1.6;
+}
+
+
+/* ================= WHY LEARNING ================= */
+
+.why-learning {
+    padding: 100px 20px;
+    background: var(--white);
+}
+
+.why-learning-grid {
+    display: grid;
+    grid-template-columns: 1fr 0.85fr;
+    align-items: center;
+    gap: 70px;
+}
+
+.start-section-tag {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: var(--primary);
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+}
+
+.why-learning-content h2 {
+    max-width: 600px;
+    margin: 0 0 20px;
+    color: var(--navy);
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    line-height: 1.15;
+}
+
+.why-learning-content h2 span {
+    color: var(--primary);
+}
+
+.why-learning-content > p {
+    max-width: 600px;
+    margin: 0 0 30px;
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+.learning-benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.learning-benefit {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.learning-benefit > i {
+    margin-top: 4px;
+    color: var(--primary);
+    font-size: 1.1rem;
+}
+
+.learning-benefit h3 {
+    margin: 0 0 5px;
+    color: var(--navy);
+    font-size: 1rem;
+}
+
+.learning-benefit p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.why-learning-visual {
+    display: flex;
+    justify-content: center;
+}
+
+.learning-visual-card {
+    width: 100%;
+    max-width: 420px;
+    padding: 35px;
+    background: var(--primary);
+    border-radius: 25px;
+    color: var(--white);
+    box-shadow: var(--shadow-md);
+}
+
+.visual-card-icon {
+    width: 62px;
+    height: 62px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.15);
+    font-size: 1.5rem;
+}
+
+.learning-visual-card > span {
+    display: block;
+    margin-bottom: 12px;
+    opacity: 0.8;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.learning-visual-card h3 {
+    margin: 0 0 35px;
+    font-size: 1.8rem;
+    line-height: 1.25;
+}
+
+.visual-progress {
+    margin-bottom: 30px;
+}
+
+.progress-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 0.82rem;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.progress-bar span {
+    display: block;
+    width: 25%;
+    height: 100%;
+    border-radius: inherit;
+    background: var(--white);
+}
+
+.visual-small-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.visual-small-cards div {
+    padding: 15px 8px;
+    text-align: center;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.visual-small-cards i {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.visual-small-cards span {
+    font-size: 0.72rem;
+}
+
+
+/* ================= FINAL CTA ================= */
+
+.start-learning-cta {
+    padding: 90px 20px;
+    background: var(--primary-light);
+}
+
+.start-learning-cta-content {
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cta-icon {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
+    color: var(--primary);
+    border-radius: 16px;
+    font-size: 1.4rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.start-learning-cta h2 {
+    margin: 0 0 15px;
+    color: var(--navy);
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.start-learning-cta p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+.start-outline-btn {
+    color: var(--primary);
+    background: var(--white);
+    border: 1px solid var(--primary);
+}
+
+.start-outline-btn:hover {
+    background: var(--primary);
+    color: var(--white);
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1050px) {
+
+    .learning-steps-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .learning-areas-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .why-learning-grid {
+        gap: 45px;
+    }
+
+}
+
+
+@media (max-width: 850px) {
+
+    .start-learning-hero {
+        padding: 85px 20px 80px;
+    }
+
+    .why-learning-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .why-learning-visual {
+        margin-top: 10px;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .start-learning-hero {
+        padding: 70px 18px;
+    }
+
+    .start-learning-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 1.6rem;
+    }
+
+    .start-learning-hero p {
+        font-size: 0.95rem;
+    }
+
+    .learning-steps,
+    .learning-areas,
+    .why-learning {
+        padding: 75px 18px;
+    }
+
+    .learning-steps-grid,
+    .learning-areas-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .learning-visual-card {
+        padding: 28px;
+    }
+
+    .visual-small-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .start-learning-cta {
+        padding: 70px 18px;
+    }
+
+}
+
+
+@media (max-width: 420px) {
+
+    .start-learning-actions,
+    .cta-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .start-primary-btn,
+    .start-secondary-btn,
+    .start-outline-btn {
+        width: 100%;
+    }
+
+    .learning-step-card,
+    .learning-area-card {
+        padding: 22px;
+    }
+
+}
+
+/* =========================================================
+   ASSESSMENT PAGE
+   ========================================================= */
+
+.assessment-hero {
+    position: relative;
+    padding: 105px 20px 95px;
+    overflow: hidden;
+    background:
+        linear-gradient(
+            135deg,
+            var(--primary-light),
+            var(--white)
+        );
+}
+
+.assessment-hero::before {
+    content: "";
+    position: absolute;
+    width: 430px;
+    height: 430px;
+    right: -190px;
+    top: -190px;
+    border-radius: 50%;
+    background: rgba(0, 120, 255, 0.08);
+}
+
+.assessment-hero::after {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    left: -140px;
+    bottom: -140px;
+    border-radius: 50%;
+    background: rgba(0, 120, 255, 0.06);
+}
+
+.assessment-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.assessment-hero-icon {
+    width: 82px;
+    height: 82px;
+    margin: 0 auto 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    background: var(--white);
+    color: var(--primary);
+    font-size: 2rem;
+    box-shadow: var(--shadow-md);
+}
+
+.assessment-label {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: var(--primary);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.assessment-hero h1 {
+    margin: 0 auto 20px;
+    color: var(--navy);
+    font-size: clamp(2.5rem, 6vw, 4.3rem);
+    line-height: 1.08;
+    font-weight: 800;
+}
+
+.assessment-hero h1 span {
+    display: block;
+    color: var(--primary);
+}
+
+.assessment-hero p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: var(--muted);
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+
+/* ================= ASSESSMENT INTRO ================= */
+
+.assessment-intro {
+    padding: 100px 20px;
+    background: var(--white);
+}
+
+.assessment-section-heading {
+    max-width: 720px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.assessment-section-heading > span {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: var(--primary);
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.assessment-section-heading h2 {
+    margin: 0 0 15px;
+    color: var(--navy);
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.2;
+}
+
+.assessment-section-heading h2 strong {
+    color: var(--primary);
+}
+
+.assessment-section-heading p {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+
+/* ================= ASSESSMENT GRID ================= */
+
+.assessment-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.assessment-card {
+    position: relative;
+    padding: 30px 26px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    overflow: hidden;
+}
+
+.assessment-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--primary-light);
+    box-shadow: var(--shadow-md);
+}
+
+.assessment-number {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    color: var(--primary-light);
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.assessment-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-light);
+    color: var(--primary);
+    border-radius: 15px;
+    font-size: 1.3rem;
+}
+
+.assessment-card h3 {
+    margin: 0 0 12px;
+    padding-right: 35px;
+    color: var(--navy);
+    font-size: 1.15rem;
+    line-height: 1.35;
+}
+
+.assessment-card p {
+    min-height: 105px;
+    margin: 0 0 22px;
+    color: var(--muted);
+    font-size: 0.92rem;
+    line-height: 1.7;
+}
+
+.assessment-card a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+    transition: var(--transition);
+}
+
+.assessment-card a:hover {
+    gap: 12px;
+}
+
+
+/* ================= ASSESSMENT CTA ================= */
+
+.assessment-cta {
+    padding: 90px 20px;
+    background: var(--primary-light);
+}
+
+.assessment-cta-content {
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.assessment-cta-icon {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
+    color: var(--primary);
+    border-radius: 16px;
+    font-size: 1.4rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.assessment-cta h2 {
+    margin: 0 0 15px;
+    color: var(--navy);
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.assessment-cta p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+.assessment-cta-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.assessment-primary-btn,
+.assessment-secondary-btn {
+    min-height: 52px;
+    padding: 0 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: var(--transition);
+}
+
+.assessment-primary-btn {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.assessment-primary-btn:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+.assessment-secondary-btn {
+    background: var(--white);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.assessment-secondary-btn:hover {
+    background: var(--primary);
+    color: var(--white);
+}
+
+
+/* ================= ASSESSMENT RESPONSIVE ================= */
+
+@media (max-width: 1050px) {
+
+    .assessment-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .assessment-hero {
+        padding: 75px 18px;
+    }
+
+    .assessment-hero-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 1.6rem;
+    }
+
+    .assessment-hero p {
+        font-size: 0.95rem;
+    }
+
+    .assessment-intro {
+        padding: 75px 18px;
+    }
+
+    .assessment-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .assessment-card p {
+        min-height: auto;
+    }
+
+    .assessment-cta {
+        padding: 70px 18px;
+    }
+
+}
+
+
+@media (max-width: 420px) {
+
+    .assessment-cta-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .assessment-primary-btn,
+    .assessment-secondary-btn {
+        width: 100%;
+    }
+
+}
+
+/* =========================================================
+   CONSULTANTS PAGE
+   ========================================================= */
+
+.consultant-hero {
+    position: relative;
+    padding: 105px 20px 95px;
+    overflow: hidden;
+    background:
+        linear-gradient(
+            135deg,
+            var(--primary-light),
+            var(--white)
+        );
+}
+
+.consultant-hero::before {
+    content: "";
+    position: absolute;
+    width: 440px;
+    height: 440px;
+    right: -200px;
+    top: -200px;
+    border-radius: 50%;
+    background: rgba(0, 120, 255, 0.08);
+}
+
+.consultant-hero::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: -150px;
+    bottom: -150px;
+    border-radius: 50%;
+    background: rgba(0, 120, 255, 0.06);
+}
+
+.consultant-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.consultant-hero-icon {
+    width: 84px;
+    height: 84px;
+    margin: 0 auto 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
+    color: var(--primary);
+    border-radius: 22px;
+    font-size: 2rem;
+    box-shadow: var(--shadow-md);
+}
+
+.consultant-label {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: var(--primary);
+    font-size: 0.77rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.consultant-hero h1 {
+    margin: 0 auto 20px;
+    color: var(--navy);
+    font-size: clamp(2.4rem, 6vw, 4.3rem);
+    line-height: 1.08;
+}
+
+.consultant-hero h1 span {
+    display: block;
+    color: var(--primary);
+}
+
+.consultant-hero p {
+    max-width: 720px;
+    margin: 0 auto 32px;
+    color: var(--muted);
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.consultant-hero-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 52px;
+    padding: 0 25px;
+    background: var(--primary);
+    color: var(--white);
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: var(--transition);
+}
+
+.consultant-hero-btn:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   ELIGIBILITY
+   ========================================================= */
+
+.consultant-eligibility {
+    padding: 100px 20px;
+    background: var(--white);
+}
+
+.consultant-section-heading {
+    max-width: 720px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.consultant-section-heading > span {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: var(--primary);
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.consultant-section-heading h2 {
+    margin: 0 0 15px;
+    color: var(--navy);
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.consultant-section-heading h2 strong {
+    color: var(--primary);
+}
+
+.consultant-section-heading p {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+.eligibility-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.eligibility-card {
+    padding: 30px 25px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    background: var(--white);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.eligibility-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-light);
+    box-shadow: var(--shadow-md);
+}
+
+.eligibility-icon {
+    width: 58px;
+    height: 58px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-light);
+    color: var(--primary);
+    border-radius: 14px;
+    font-size: 1.25rem;
+}
+
+.eligibility-card h3 {
+    margin: 0 0 10px;
+    color: var(--navy);
+    font-size: 1.05rem;
+}
+
+.eligibility-card p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   APPLICATION SECTION
+   ========================================================= */
+
+.consultant-application {
+    padding: 100px 20px;
+    background: var(--light);
+}
+
+.consultant-form-wrapper {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.consultant-form-heading {
+    max-width: 760px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.consultant-form-heading > span {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: var(--primary);
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.consultant-form-heading h2 {
+    margin: 0 0 15px;
+    color: var(--navy);
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.consultant-form-heading h2 strong {
+    color: var(--primary);
+}
+
+.consultant-form-heading > p {
+    margin: 0 0 25px;
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+.form-notice {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 15px 18px;
+    text-align: left;
+    background: var(--primary-light);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    color: var(--muted);
+    font-size: 0.84rem;
+    line-height: 1.6;
+}
+
+.form-notice i {
+    margin-top: 3px;
+    color: var(--primary);
+}
+
+
+/* =========================================================
+   FORM
+   ========================================================= */
+
+.consultant-form {
+    padding: 35px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.form-section {
+    padding: 35px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.form-section:first-child {
+    padding-top: 5px;
+}
+
+.form-section:last-of-type {
+    border-bottom: 0;
+}
+
+.form-section-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 28px;
+}
+
+.form-section-number {
+    width: 45px;
+    height: 45px;
+    flex: 0 0 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-light);
+    color: var(--primary);
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 800;
+}
+
+.form-section-title h3 {
+    margin: 0 0 4px;
+    color: var(--navy);
+    font-size: 1.15rem;
+}
+
+.form-section-title p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.85rem;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-full {
+    grid-column: 1 / -1;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    color: var(--navy);
+    font-size: 0.87rem;
+    font-weight: 700;
+}
+
+.form-group label span {
+    color: #d93025;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    background: var(--white);
+    color: var(--navy);
+    font-family: inherit;
+    font-size: 0.9rem;
+    outline: none;
+    transition: var(--transition);
+    box-sizing: border-box;
+}
+
+.form-group input,
+.form-group select {
+    min-height: 48px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 130px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(0, 120, 255, 0.08);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #9aa3ad;
+}
+
+
+/* =========================================================
+   FILE UPLOAD
+   ========================================================= */
+
+.file-upload-box {
+    padding: 35px;
+    text-align: center;
+    border: 2px dashed var(--border);
+    border-radius: 14px;
+    background: var(--light);
+}
+
+.file-upload-box > i {
+    margin-bottom: 15px;
+    color: var(--primary);
+    font-size: 2rem;
+}
+
+.file-upload-box h3 {
+    margin: 0 0 7px;
+    color: var(--navy);
+    font-size: 1rem;
+}
+
+.file-upload-box p {
+    margin: 0 0 20px;
+    color: var(--muted);
+    font-size: 0.84rem;
+}
+
+.file-upload-box input[type="file"] {
+    max-width: 100%;
+    padding: 10px;
+}
+
+
+/* =========================================================
+   DECLARATION
+   ========================================================= */
+
+.declaration-box {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 20px;
+    background: var(--light);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    color: var(--muted);
+    font-size: 0.87rem;
+    line-height: 1.6;
+    cursor: pointer;
+}
+
+.checkbox-label input {
+    flex: 0 0 auto;
+    width: 18px;
+    height: 18px;
+    margin-top: 3px;
+    accent-color: var(--primary);
+}
+
+
+/* =========================================================
+   SUBMIT
+   ========================================================= */
+
+.consultant-submit {
+    padding-top: 35px;
+    text-align: center;
+}
+
+.consultant-submit-btn {
+    min-height: 55px;
+    padding: 0 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    border: 0;
+    border-radius: 10px;
+    background: var(--primary);
+    color: var(--white);
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.consultant-submit-btn:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+.consultant-submit > p {
+    margin: 15px 0 0;
+    color: var(--muted);
+    font-size: 0.78rem;
+}
+
+.consultant-submit > p i {
+    color: var(--primary);
+}
+
+
+/* =========================================================
+   BOTTOM CTA
+   ========================================================= */
+
+.consultant-bottom-cta {
+    padding: 90px 20px;
+    background: var(--primary-light);
+}
+
+.consultant-bottom-content {
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.consultant-bottom-content > i {
+    display: inline-flex;
+    width: 65px;
+    height: 65px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    background: var(--white);
+    color: var(--primary);
+    border-radius: 16px;
+    font-size: 1.5rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.consultant-bottom-content h2 {
+    margin: 0 0 15px;
+    color: var(--navy);
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.consultant-bottom-content p {
+    max-width: 620px;
+    margin: 0 auto 28px;
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+.consultant-bottom-content a {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    min-height: 50px;
+    padding: 0 23px;
+    background: var(--primary);
+    color: var(--white);
+    border-radius: 9px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: var(--transition);
+}
+
+.consultant-bottom-content a:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1050px) {
+
+    .eligibility-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 850px) {
+
+    .consultant-hero {
+        padding: 80px 20px;
+    }
+
+    .consultant-form {
+        padding: 28px;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .consultant-hero {
+        padding: 70px 18px;
+    }
+
+    .consultant-hero-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 1.6rem;
+    }
+
+    .consultant-hero p {
+        font-size: 0.95rem;
+    }
+
+    .consultant-eligibility,
+    .consultant-application {
+        padding: 75px 18px;
+    }
+
+    .eligibility-grid,
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-full {
+        grid-column: auto;
+    }
+
+    .consultant-form {
+        padding: 22px;
+    }
+
+    .form-section {
+        padding: 28px 0;
+    }
+
+    .consultant-bottom-cta {
+        padding: 70px 18px;
+    }
+
+}
+
+
+@media (max-width: 420px) {
+
+    .consultant-submit-btn {
+        width: 100%;
+    }
+
+    .form-notice {
+        font-size: 0.78rem;
+    }
+
+    .file-upload-box {
+        padding: 25px 15px;
+    }
+
+}
+
+/* =========================================================
+   PKHEALTHSCIENCE REGISTRATION PAGE
+   ========================================================= */
+
+.registration-hero {
+    position: relative;
+    padding: 95px 20px 85px;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(7, 48, 73, 0.97),
+            rgba(12, 105, 125, 0.94)
+        );
+    color: #ffffff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.registration-hero::before {
+    content: "";
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    top: -190px;
+    right: -100px;
+}
+
+.registration-hero::after {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.04);
+    bottom: -150px;
+    left: -80px;
+}
+
+.registration-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.registration-hero-icon {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 30px;
+}
+
+.registration-label {
+    display: inline-block;
+    margin-bottom: 14px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    opacity: 0.9;
+}
+
+.registration-hero h1 {
+    margin: 0;
+    font-size: clamp(34px, 5vw, 58px);
+    line-height: 1.1;
+    font-weight: 800;
+}
+
+.registration-hero h1 span {
+    display: block;
+    margin-top: 8px;
+}
+
+.registration-hero p {
+    max-width: 680px;
+    margin: 22px auto 0;
+    font-size: 17px;
+    line-height: 1.8;
+    opacity: 0.9;
+}
+
+
+/* =========================================================
+   INFORMATION CARDS
+   ========================================================= */
+
+.registration-info {
+    padding: 65px 20px;
+    background: #f7fafc;
+}
+
+.registration-info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.registration-info-card {
+    padding: 30px;
+    background: #ffffff;
+    border: 1px solid #e5edf2;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(20, 55, 70, 0.05);
+}
+
+.registration-info-icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 14px;
+    background: #e9f7f8;
+    font-size: 21px;
+}
+
+.registration-info-card h3 {
+    margin: 0 0 10px;
+    font-size: 19px;
+}
+
+.registration-info-card p {
+    margin: 0;
+    color: #667780;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   FORM AREA
+   ========================================================= */
+
+.registration-application {
+    padding: 85px 20px;
+    background: #ffffff;
+}
+
+.registration-form-wrapper {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.registration-form-heading {
+    max-width: 720px;
+    margin: 0 auto 35px;
+    text-align: center;
+}
+
+.registration-form-heading h2 {
+    margin: 8px 0 14px;
+    font-size: clamp(30px, 4vw, 42px);
+}
+
+.registration-form-heading p {
+    margin: 0;
+    color: #687982;
+    line-height: 1.8;
+}
+
+.section-label {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+}
+
+
+/* Notice */
+
+.registration-notice {
+    display: flex;
+    gap: 16px;
+    padding: 20px;
+    margin-bottom: 35px;
+    border-radius: 14px;
+    background: #eef8fa;
+    border-left: 4px solid #1596a5;
+}
+
+.registration-notice > i {
+    margin-top: 3px;
+    font-size: 20px;
+}
+
+.registration-notice strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.registration-notice p {
+    margin: 0;
+    color: #62747c;
+    line-height: 1.6;
+}
+
+
+/* Main form */
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.registration-form-section {
+    padding: 32px;
+    border: 1px solid #e3ebef;
+    border-radius: 18px;
+    background: #ffffff;
+    box-shadow: 0 7px 25px rgba(20, 55, 70, 0.04);
+}
+
+.registration-section-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #e8eef1;
+}
+
+.registration-section-title > span {
+    width: 43px;
+    height: 43px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: #eaf7f8;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.registration-section-title h3 {
+    margin: 0 0 4px;
+    font-size: 20px;
+}
+
+.registration-section-title p {
+    margin: 0;
+    color: #718087;
+    font-size: 14px;
+}
+
+
+/* Form grid */
+
+.registration-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 21px;
+}
+
+.registration-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.registration-form-group.registration-full {
+    grid-column: 1 / -1;
+}
+
+.registration-form-group label {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.registration-form-group input,
+.registration-form-group select,
+.registration-form-group textarea {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #d7e2e7;
+    border-radius: 10px;
+    outline: none;
+    background: #ffffff;
+    color: #24353c;
+    font-family: inherit;
+    font-size: 14px;
+    transition: 0.2s ease;
+    box-sizing: border-box;
+}
+
+.registration-form-group textarea {
+    resize: vertical;
+    min-height: 110px;
+}
+
+.registration-form-group input:focus,
+.registration-form-group select:focus,
+.registration-form-group textarea:focus {
+    border-color: #1596a5;
+    box-shadow: 0 0 0 3px rgba(21, 150, 165, 0.10);
+}
+
+
+/* =========================================================
+   SEMESTER SELECTION
+   ========================================================= */
+
+.semester-selection {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.semester-option {
+    cursor: pointer;
+}
+
+.semester-option input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.semester-card {
+    min-height: 125px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    text-align: center;
+    border: 1px solid #dce7eb;
+    border-radius: 15px;
+    background: #ffffff;
+    transition: 0.2s ease;
+}
+
+.semester-card i {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    border-radius: 50%;
+    background: #edf7f8;
+    font-size: 13px;
+}
+
+.semester-card strong {
+    font-size: 14px;
+}
+
+.semester-card small {
+    color: #75838a;
+    font-size: 12px;
+}
+
+.semester-option input:checked + .semester-card {
+    border-color: #1596a5;
+    background: #effafb;
+    box-shadow: 0 0 0 2px rgba(21, 150, 165, 0.08);
+}
+
+
+/* =========================================================
+   COURSE SELECTION
+   ========================================================= */
+
+.course-registration-notice {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 17px;
+    margin-bottom: 22px;
+    border-radius: 10px;
+    background: #f7fafb;
+    color: #52646c;
+    font-size: 14px;
+}
+
+.course-registration-notice i {
+    font-size: 17px;
+}
+
+.course-selection-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.course-checkbox {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 15px;
+    border: 1px solid #dfe8ec;
+    border-radius: 11px;
+    cursor: pointer;
+    background: #ffffff;
+    transition: 0.2s ease;
+}
+
+.course-checkbox:hover {
+    border-color: #9bcbd1;
+    background: #fbfeff;
+}
+
+.course-checkbox input {
+    width: 17px;
+    height: 17px;
+    flex-shrink: 0;
+    margin-top: 2px;
+    accent-color: #1596a5;
+}
+
+.course-checkbox span {
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   DECLARATION
+   ========================================================= */
+
+.registration-declaration {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 13px;
+    background: #f8fafb;
+}
+
+.registration-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.registration-checkbox input {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    margin-top: 2px;
+    accent-color: #1596a5;
+}
+
+.registration-checkbox span {
+    color: #586a72;
+    font-size: 13px;
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   SUBMIT
+   ========================================================= */
+
+.registration-submit-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 5px;
+}
+
+.registration-submit-note {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #718087;
+    font-size: 13px;
+}
+
+.registration-submit-note i {
+    font-size: 15px;
+}
+
+.registration-submit-btn {
+    min-width: 210px;
+    padding: 15px 24px;
+    border: 0;
+    border-radius: 11px;
+    background: #1596a5;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.registration-submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(21, 150, 165, 0.22);
+}
+
+.registration-submit-btn i {
+    margin-right: 8px;
+}
+
+
+/* =========================================================
+   BOTTOM CTA
+   ========================================================= */
+
+.registration-bottom-cta {
+    padding: 70px 20px;
+    background: #f5fafb;
+}
+
+.registration-cta-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 45px;
+    border-radius: 20px;
+    background: #073049;
+    color: #ffffff;
+}
+
+.registration-cta-content h2 {
+    margin: 8px 0 10px;
+    font-size: 28px;
+}
+
+.registration-cta-content p {
+    max-width: 650px;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.78);
+    line-height: 1.7;
+}
+
+.registration-cta-btn {
+    flex-shrink: 0;
+    padding: 13px 20px;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #073049;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.registration-cta-btn i {
+    margin-left: 8px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1050px) {
+
+    .registration-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .semester-selection {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 850px) {
+
+    .registration-form-section {
+        padding: 25px;
+    }
+
+    .registration-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .registration-form-group.registration-full {
+        grid-column: auto;
+    }
+
+    .course-selection-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .registration-submit-area {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .registration-submit-btn {
+        width: 100%;
+    }
+
+    .registration-cta-content {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .registration-hero {
+        padding: 70px 18px;
+    }
+
+    .registration-hero p {
+        font-size: 15px;
+    }
+
+    .registration-info,
+    .registration-application {
+        padding: 55px 16px;
+    }
+
+    .semester-selection {
+        grid-template-columns: 1fr;
+    }
+
+    .registration-form-section {
+        padding: 20px;
+        border-radius: 14px;
+    }
+
+    .registration-section-title {
+        align-items: flex-start;
+    }
+
+    .registration-section-title h3 {
+        font-size: 18px;
+    }
+
+    .registration-notice {
+        align-items: flex-start;
+    }
+
+    .registration-bottom-cta {
+        padding: 50px 16px;
+    }
+
+}
+
+
+@media (max-width: 420px) {
+
+    .registration-hero h1 {
+        font-size: 31px;
+    }
+
+    .registration-form-section {
+        padding: 17px;
+    }
+
+    .registration-info-card {
+        padding: 23px;
+    }
+
+    .registration-cta-content {
+        padding: 25px;
+    }
+
 }

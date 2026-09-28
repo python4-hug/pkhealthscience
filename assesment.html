@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Assessment | PKHealthScience</title>
+
+    <meta
+        name="description"
+        content="PKHealthScience assessment portal for assignments, practical training, examinations, projects, seminars and other academic assessments."
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="site-header" id="header">
+
+        <div class="container nav-container">
+
+            <!-- Logo -->
+
+            <a href="../index.html" class="logo" aria-label="PKHealthScience Home">
+
+                <span class="logo-icon">
+                    <i class="fa-solid fa-book-medical"></i>
+                </span>
+
+                <span class="logo-text">
+                    <strong>PKHealth</strong><span>Science</span>
+                </span>
+
+            </a>
+
+
+            <!-- Desktop Navigation -->
+
+            <nav class="desktop-nav" aria-label="Main navigation">
+
+                <a href="index.html" class="nav-link">
+                    Home
+                </a>
+
+                <a href="start-learning.html" class="nav-link">
+                    Start Learning
+                </a>
+
+                <a href="consultants.html" class="nav-link">
+                    Consultants
+                </a>
+
+                <a href="courses.html" class="nav-link">
+                    Courses
+                </a>
+
+                <a href="../index.html#topics" class="nav-link">
+                    Topics
+                </a>
+
+                <a href="../index.html#materials" class="nav-link">
+                    Study Materials
+                </a>
+
+                <a href="assessment.html" class="nav-link active">
+                    Assessment
+                </a>
+
+                <a href="registration.html" class="nav-link">
+                    Registration
+                </a>
+
+                <a href="student-verification.html" class="nav-link">
+                    Student Verification
+                </a>
+
+                <a href="application.html" class="nav-link">
+                    Application
+                </a>
+
+            </nav>
+
+
+            <!-- Header Actions -->
+
+            <div class="nav-actions">
+
+                <a href="login.html" class="login-link">
+                    Login
+                </a>
+
+                <a href="signup.html" class="signup-btn">
+                    Sign Up
+                </a>
+
+            </div>
+
+
+            <!-- Mobile Menu Button -->
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="mobileMenu"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MOBILE MENU ================= -->
+
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <aside
+        class="mobile-menu"
+        id="mobileMenu"
+        aria-label="Mobile navigation"
+        aria-hidden="true"
+    >
+
+        <div class="mobile-menu-header">
+
+            <a href="../index.html" class="logo mobile-logo">
+
+                <span class="logo-icon">
+                    <i class="fa-solid fa-book-medical"></i>
+                </span>
+
+                <span class="logo-text">
+                    <strong>PKHealth</strong><span>Science</span>
+                </span>
+
+            </a>
+
+            <button
+                class="menu-close"
+                id="menuClose"
+                aria-label="Close navigation menu"
+                type="button"
+            >
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+        </div>
+
+
+        <nav class="mobile-nav">
+
+            <a href="index.html" class="mobile-nav-link active">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+
+            <a href="start-learning.html" class="mobile-nav-link">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span>Start Learning</span>
+            </a>
+
+            <a href="consultants.html" class="mobile-nav-link">
+                <i class="fa-solid fa-comments"></i>
+                <span>Consultants</span>
+            </a>
+
+            <a href="courses.html" class="mobile-nav-link">
+                <i class="fa-solid fa-book-open"></i>
+                <span>Courses</span>
+            </a>
+
+            <a href="../index.html#topics" class="mobile-nav-link">
+                <i class="fa-solid fa-flask"></i>
+                <span>Health Science Topics</span>
+            </a>
+
+            <a href="../index.html#materials" class="mobile-nav-link">
+                <i class="fa-solid fa-file-lines"></i>
+                <span>Study Materials</span>
+            </a>
+
+            <a href="assessment.html" class="mobile-nav-link">
+                <i class="fa-solid fa-clipboard-check"></i>
+                <span>Assessment</span>
+            </a>
+
+            <div class="mobile-divider"></div>
+
+            <a href="registration.html" class="mobile-nav-link">
+                <i class="fa-solid fa-user-plus"></i>
+                <span>Registration</span>
+            </a>
+
+            <a href="student-verification.html" class="mobile-nav-link">
+                <i class="fa-solid fa-user-check"></i>
+                <span>Student Verification</span>
+            </a>
+
+            <a href="application.html" class="mobile-nav-link">
+                <i class="fa-solid fa-file-signature"></i>
+                <span>Application</span>
+            </a>
+
+            <a href="login.html" class="mobile-nav-link">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                <span>Login</span>
+            </a>
+
+            <a href="signup.html" class="mobile-nav-link">
+                <i class="fa-solid fa-user-plus"></i>
+                <span>Sign Up</span>
+            </a>
+
+            <a href="contact.html" class="mobile-nav-link">
+                <i class="fa-solid fa-phone"></i>
+                <span>Contact</span>
+            </a>
+
+            <a href="about.html" class="mobile-nav-link">
+                <i class="fa-solid fa-circle-info"></i>
+                <span>About</span>
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- ================= ASSESSMENT HERO ================= -->
+
+    <main>
+
+        <section class="assessment-hero">
+
+            <div class="container assessment-hero-content">
+
+                <div class="assessment-hero-icon">
+                    <i class="fa-solid fa-clipboard-check"></i>
+                </div>
+
+                <span class="assessment-label">
+                    PKHEALTHSCIENCE ACADEMIC ASSESSMENT
+                </span>
+
+                <h1>
+                    Assessment &
+                    <span>Academic Activities</span>
+                </h1>
+
+                <p>
+                    Assessment at PKHealthScience provides learners with
+                    different opportunities to demonstrate their knowledge,
+                    practical skills, understanding, research abilities,
+                    and academic development.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ASSESSMENT INTRO ================= -->
+
+        <section class="assessment-intro">
+
+            <div class="container">
+
+                <div class="assessment-section-heading">
+
+                    <span>ASSESSMENT AREAS</span>
+
+                    <h2>
+                        Explore Our
+                        <strong>Assessment Activities</strong>
+                    </h2>
+
+                    <p>
+                        Students may participate in different forms of
+                        academic and practical assessment throughout their
+                        learning journey.
+                    </p>
+
+                </div>
+
+
+                <!-- ================= ASSESSMENT GRID ================= -->
+
+                <div class="assessment-grid">
+
+
+                    <!-- 01 -->
+
+                    <div class="assessment-card">
+
+                        <div class="assessment-number">
+                            01
+                        </div>
+
+                        <div class="assessment-icon">
+                            <i class="fa-solid fa-file-pen"></i>
+                        </div>
+
+                        <h3>
+                            Assignment
+                        </h3>
+
+                        <p>
+                            Academic tasks designed to help students
+                            demonstrate their understanding of course
+                            topics and learning materials.
+                        </p>
+
+                        <a href="#">
+                            View Assignment
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+
+                    <!-- 02 -->
+
+                    <div class="assessment-card">
+
+                        <div class="assessment-number">
+                            02
+                        </div>
+
+                        <div class="assessment-icon">
+                            <i class="fa-solid fa-person-walking"></i>
+                        </div>
+
+                        <h3>
+                            Field Trip
+                        </h3>
+
+                        <p>
+                            Educational visits and field activities that
+                            provide opportunities to connect classroom
+                            learning with real-world environments.
+                        </p>
+
+                        <a href="#">
+                            Field Trip
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+
+                    <!-- 03 -->
+
+                    <div class="assessment-card">
+
+                        <div class="assessment-number">
+                            03
+                        </div>
+
+                        <div class="assessment-icon">
+                            <i class="fa-solid fa-flask"></i>
+                        </div>
+
+                        <h3>
+                            Practical Training
+                        </h3>
+
+                        <p>
+                            Practical learning activities that allow
+                            students to develop and demonstrate relevant
+                            hands-on skills.
+                        </p>
+
+                        <a href="#">
+                            Practical Training
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+
+                    <!-- 04 -->
+
+                    <div class="assessment-card">
+
+                        <div class="assessment-number">
+                            04
+                        </div>
+
+                        <div class="assessment-icon">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+
+                        <h3>
+                            Industrial Training
+                        </h3>
+
+                        <p>
+                            Structured training activities designed to
+                            expose learners to professional and workplace
+                            environments.
+                        </p>
+
+                        <a href="#">
+                            Industrial Training
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+
+                    <!-- 05 -->
+
+                    <div class="assessment-card">
+
+                        <div class="assessment-number">
+                            05
+                        </div>
+
+                        <div class="assessment-icon">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+
+                        <h3>
+                            Health Practice
+                        </h3>
+
+                        <p>
+                            Learning activities focused on applying
+                            health-science knowledge and appropriate
+                            practical skills.
+                        </p>
+
+                        <a href="#">
+                            Health Practice
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+
+                    <!-- 06 -->
+
+                    <div class="assessment-card">
+
+                        <div class="assessment-number">
+                            06
+                        </div>
+
+                        <div class="assessment-icon">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+
+                        <h3>
+                            Continuous Assessment Test
+                        </h3>
+
+                        <p>
+                            Regular tests that help monitor students'
+                            understanding and progress throughout their
+                            learning.
+                        </p>
+
+                        <a href="#">
+                            Take Assessment
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+
+                    <!-- 07 -->
+
+                    <div class="assessment-card">
+
+                        <div class="assessment-number">
+                            07
+                        </div>
+
+                        <div class="assessment-icon">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+
+                        <h3>
+                            Examination
+                        </h3>
+
+                        <p>
+                            Formal academic assessments used to evaluate
+                            knowledge and understanding of completed
+                            learning materials.
+                        </p>
+
+                        <a href="#">
+                            Examination
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+
+                    <!-- 08 -->
+
+                    <div class="assessment-card">
+
+                        <div class="assessment-number">
+                            08
+                        </div>
+
+                        <div class="assessment-icon">
+                            <i class="fa-solid fa-file-lines"></i>
+                        </div>
+
+                        <h3>
+                            Term Paper
+                        </h3>
+
+                        <p>
+                            Structured academic writing that allows students
+                            to research, organize, and present information
+                            about a selected subject.
+                        </p>
+
+                        <a href="#">
+                            Term Paper
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+
+                    <!-- 09 -->
+
+                    <div class="assessment-card">
+
+                        <div class="assessment-number">
+                            09
+                        </div>
+
+                        <div class="assessment-icon">
+                            <i class="fa-solid fa-presentation-screen"></i>
+                        </div>
+
+                        <h3>
+                            Seminar
+                        </h3>
+
+                        <p>
+                            Academic presentations and discussions that
+                            encourage research, communication, participation,
+                            and knowledge sharing.
+                        </p>
+
+                        <a href="#">
+                            Seminar
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+
+                    <!-- 10 -->
+
+                    <div class="assessment-card">
+
+                        <div class="assessment-number">
+                            10
+                        </div>
+
+                        <div class="assessment-icon">
+                            <i class="fa-solid fa-diagram-project"></i>
+                        </div>
+
+                        <h3>
+                            Project
+                        </h3>
+
+                        <p>
+                            Extended academic work that allows students to
+                            investigate a topic, apply knowledge, and
+                            present their findings.
+                        </p>
+
+                        <a href="#">
+                            Project
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= STUDENT CTA ================= -->
+
+        <section class="assessment-cta">
+
+            <div class="container">
+
+                <div class="assessment-cta-content">
+
+                    <div class="assessment-cta-icon">
+                        <i class="fa-solid fa-user-graduate"></i>
+                    </div>
+
+                    <h2>
+                        Ready to Begin Your Learning Journey?
+                    </h2>
+
+                    <p>
+                        Register as a student and access the learning
+                        opportunities available through PKHealthScience.
+                    </p>
+
+                    <div class="assessment-cta-buttons">
+
+                        <a href="registration.html" class="assessment-primary-btn">
+                            Register Now
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                        <a href="courses.html" class="assessment-secondary-btn">
+                            Explore Courses
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="footer-content">
+
+                <div class="footer-brand">
+
+                    <a href="../index.html" class="logo">
+
+                        <span class="logo-icon">
+                            <i class="fa-solid fa-book-medical"></i>
+                        </span>
+
+                        <span class="logo-text">
+                            <strong>PKHealth</strong><span>Science</span>
+                        </span>
+
+                    </a>
+
+                    <p>
+                        Empowering learners with accessible health science
+                        education and resources.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-links">
+
+                    <h3>Learning</h3>
+
+                    <a href="start-learning.html">
+                        Start Learning
+                    </a>
+
+                    <a href="courses.html">
+                        Courses
+                    </a>
+
+                    <a href="assessment.html">
+                        Assessment
+                    </a>
+
+                    <a href="../index.html#materials">
+                        Study Materials
+                    </a>
+
+                </div>
+
+
+                <div class="footer-links">
+
+                    <h3>Student</h3>
+
+                    <a href="registration.html">
+                        Registration
+                    </a>
+
+                    <a href="student-verification.html">
+                        Student Verification
+                    </a>
+
+                    <a href="application.html">
+                        Application
+                    </a>
+
+                    <a href="login.html">
+                        Login
+                    </a>
+
+                </div>
+
+
+                <div class="footer-links">
+
+                    <h3>Company</h3>
+
+                    <a href="about.html">
+                        About
+                    </a>
+
+                    <a href="contact.html">
+                        Contact
+                    </a>
+
+                    <a href="consultation.html">
+                        Consultation
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    &copy; 2026 PKHealthScience. All rights reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Main JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -311,3 +311,42 @@ updateActiveNavigation();
 console.log(
     "PKHealthScience loaded successfully."
 );
+
+/* =========================================================
+   PKHEALTHSCIENCE REGISTRATION - MINIMUM 4 COURSES
+   ========================================================= */
+
+const registrationForm = document.querySelector(".registration-form");
+
+if (registrationForm) {
+
+    registrationForm.addEventListener("submit", function (event) {
+
+        const selectedCourses = registrationForm.querySelectorAll(
+            'input[name="courses[]"]:checked'
+        );
+
+        if (selectedCourses.length < 4) {
+
+            event.preventDefault();
+
+            alert(
+                "Please select at least 4 courses before submitting your registration."
+            );
+
+            const courseSection =
+                document.querySelector(".course-selection-grid");
+
+            if (courseSection) {
+                courseSection.scrollIntoView({
+                    behavior: "smooth",
+                    block: "center"
+                });
+            }
+
+            return;
+        }
+
+    });
+
+}

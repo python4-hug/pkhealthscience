@@ -1,0 +1,1818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Registration | PKHealthScience</title>
+
+    <meta
+        name="description"
+        content="Register as a student at PKHealthScience and select your semester and courses."
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="site-header" id="header">
+
+    <div class="container nav-container">
+
+        <a href="index.html" class="logo" aria-label="PKHealthScience Home">
+
+            <span class="logo-icon">
+                <i class="fa-solid fa-book-medical"></i>
+            </span>
+
+            <span class="logo-text">
+                <strong>PKHealth</strong><span>Science</span>
+            </span>
+
+        </a>
+
+        <!-- Desktop Navigation -->
+
+        <nav class="desktop-nav" aria-label="Main navigation">
+
+            <a href="index.html" class="nav-link">
+                Home
+            </a>
+
+            <a href="start-learning.html" class="nav-link">
+                Start Learning
+            </a>
+
+            <a href="consultants.html" class="nav-link">
+                Consultants
+            </a>
+
+            <a href="courses.html" class="nav-link">
+                Courses
+            </a>
+
+            <a href="../index.html#materials" class="nav-link">
+                Study Materials
+            </a>
+
+            <a href="assessment.html" class="nav-link">
+                Assessment
+            </a>
+
+            <a href="registration.html" class="nav-link active">
+                Registration
+            </a>
+
+            <a href="https://www.saueverify.com.ng/" class="nav-link">
+                Student Verification
+            </a>
+
+            <a href="application.html" class="nav-link">
+                Application
+            </a>
+
+        </nav>
+
+        <div class="nav-actions">
+
+            <a href="login.html" class="login-link">
+                Login
+            </a>
+
+
+        </div>
+
+        <!-- Mobile Menu Button -->
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="mobileMenu"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- ================= MOBILE MENU ================= -->
+
+<div class="mobile-menu" id="mobileMenu">
+
+    <div class="mobile-menu-header">
+
+        <div class="mobile-menu-title">
+            <i class="fa-solid fa-book-medical"></i>
+            PKHealthScience
+        </div>
+
+        <button
+            class="menu-close"
+            id="menuClose"
+            type="button"
+            aria-label="Close navigation menu"
+        >
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+    </div>
+
+
+    <nav class="mobile-nav">
+
+        <a href="../index.html" class="mobile-nav-link">
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+        </a>
+
+        <a href="start-learning.html" class="mobile-nav-link">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>Start Learning</span>
+        </a>
+
+        <a href="consultants.html" class="mobile-nav-link">
+            <i class="fa-solid fa-user-doctor"></i>
+            <span>Consultants</span>
+        </a>
+
+        <a href="courses.html" class="mobile-nav-link">
+            <i class="fa-solid fa-book-open"></i>
+            <span>Courses</span>
+        </a>
+
+        <a href="../index.html#topics" class="mobile-nav-link">
+            <i class="fa-solid fa-stethoscope"></i>
+            <span>Health Science Topics</span>
+        </a>
+
+        <a href="../index.html#materials" class="mobile-nav-link">
+            <i class="fa-solid fa-folder-open"></i>
+            <span>Study Materials</span>
+        </a>
+
+        <a href="assessment.html" class="mobile-nav-link">
+            <i class="fa-solid fa-clipboard-check"></i>
+            <span>Assessment</span>
+        </a>
+
+        <a href="registration.html" class="mobile-nav-link">
+            <i class="fa-solid fa-user-plus"></i>
+            <span>Registration</span>
+        </a>
+
+        <a href="student-verification.html" class="mobile-nav-link">
+            <i class="fa-solid fa-id-card"></i>
+            <span>Student Verification</span>
+        </a>
+
+        <a href="application.html" class="mobile-nav-link">
+            <i class="fa-solid fa-file-signature"></i>
+            <span>Application</span>
+        </a>
+
+        <a href="login.html" class="mobile-nav-link">
+            <i class="fa-solid fa-right-to-bracket"></i>
+            <span>Login</span>
+        </a>
+
+
+        <a href="contact.html" class="mobile-nav-link">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Contact</span>
+        </a>
+
+        <a href="about.html" class="mobile-nav-link">
+            <i class="fa-solid fa-circle-info"></i>
+            <span>About</span>
+        </a>
+
+    </nav>
+
+</div>
+
+<div class="menu-overlay" id="menuOverlay"></div>
+
+
+<!-- ================= REGISTRATION HERO ================= -->
+
+<section class="registration-hero">
+
+    <div class="container registration-hero-content">
+
+        <div class="registration-hero-icon">
+            <i class="fa-solid fa-user-graduate"></i>
+        </div>
+
+        <span class="registration-label">
+            STUDENT REGISTRATION
+        </span>
+
+        <h1>
+            Register as a
+            <span>PKHealthScience Student</span>
+        </h1>
+
+        <p>
+            Complete your student information, select your semester,
+            and register for the courses you want to study.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= REGISTRATION INFORMATION ================= -->
+
+<section class="registration-info">
+
+    <div class="container">
+
+        <div class="registration-info-grid">
+
+            <div class="registration-info-card">
+
+                <div class="registration-info-icon">
+                    <i class="fa-solid fa-list-check"></i>
+                </div>
+
+                <h3>Choose Your Semester</h3>
+
+                <p>
+                    Select the semester you are registering for and
+                    complete the corresponding course selections.
+                </p>
+
+            </div>
+
+
+            <div class="registration-info-card">
+
+                <div class="registration-info-icon">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+
+                <h3>Register Your Courses</h3>
+
+                <p>
+                    Select at least four courses from the available
+                    health-science course options.
+                </p>
+
+            </div>
+
+
+            <div class="registration-info-card">
+
+                <div class="registration-info-icon">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </div>
+
+                <h3>Submit Registration</h3>
+
+                <p>
+                    Review your information carefully before submitting
+                    your registration form.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= REGISTRATION FORM ================= -->
+
+<section class="registration-application">
+
+    <div class="container">
+
+        <div class="registration-form-wrapper">
+
+            <div class="registration-form-heading">
+
+                <span class="section-label">
+                    STUDENT REGISTRATION FORM
+                </span>
+
+                <h2>
+                    Complete Your Registration
+                </h2>
+
+                <p>
+                    Please provide accurate information. Your registration
+                    details will be sent securely to the PKHealthScience
+                    registration team for processing.
+                </p>
+
+            </div>
+
+
+            <div class="registration-notice">
+
+                <i class="fa-solid fa-circle-info"></i>
+
+                <div>
+                    <strong>Before you submit</strong>
+
+                    <p>
+                        Make sure your name, email address, programme,
+                        semester and selected courses are correct.
+                        You must select at least four courses.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- FORM -->
+
+            <form
+                class="registration-form"
+                action="https://formsubmit.co/pkhealthscience@gmail.com"
+                method="POST"
+            >
+
+                <!-- FormSubmit settings -->
+
+                <input
+                    type="hidden"
+                    name="_subject"
+                    value="New PKHealthScience Student Registration"
+                >
+
+                <input
+                    type="hidden"
+                    name="_template"
+                    value="table"
+                >
+
+                <input
+                    type="hidden"
+                    name="_captcha"
+                    value="true"
+                >
+
+                <input
+                    type="hidden"
+                    name="_autoresponse"
+                    value="Thank you for registering with PKHealthScience. Your student registration form has been received successfully. Our registration team will review your information and contact you using the email address you provided. Please keep your registration information available for future reference. — PKHealthScience"
+                >
+
+                <!-- Honeypot -->
+
+                <input
+                    type="text"
+                    name="_honey"
+                    style="display:none"
+                    tabindex="-1"
+                    autocomplete="off"
+                >
+
+
+                <!-- ================= SECTION 1 ================= -->
+
+                <div class="registration-form-section">
+
+                    <div class="registration-section-title">
+
+                        <span>01</span>
+
+                        <div>
+                            <h3>Personal Information</h3>
+                            <p>Tell us about yourself.</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="registration-form-grid">
+
+                        <div class="registration-form-group">
+
+                            <label for="firstName">
+                                First Name *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="firstName"
+                                name="first_name"
+                                placeholder="Enter your first name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="registration-form-group">
+
+                            <label for="lastName">
+                                Last Name *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="lastName"
+                                name="last_name"
+                                placeholder="Enter your last name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="registration-form-group">
+
+                            <label for="otherNames">
+                                Other Names
+                            </label>
+
+                            <input
+                                type="text"
+                                id="otherNames"
+                                name="other_names"
+                                placeholder="Enter other names"
+                            >
+
+                        </div>
+
+
+                        <div class="registration-form-group">
+
+                            <label for="dateOfBirth">
+                                Date of Birth *
+                            </label>
+
+                            <input
+                                type="date"
+                                id="dateOfBirth"
+                                name="date_of_birth"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="registration-form-group">
+
+                            <label for="gender">
+                                Gender *
+                            </label>
+
+                            <select
+                                id="gender"
+                                name="gender"
+                                required
+                            >
+
+                                <option value="">
+                                    Select gender
+                                </option>
+
+                                <option value="Male">
+                                    Male
+                                </option>
+
+                                <option value="Female">
+                                    Female
+                                </option>
+
+                                <option value="Prefer not to say">
+                                    Prefer not to say
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="registration-form-group">
+
+                            <label for="nationality">
+                                Nationality *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="nationality"
+                                name="nationality"
+                                placeholder="Enter nationality"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="registration-form-group">
+
+                            <label for="email">
+                                Email Address *
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="you@example.com"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="registration-form-group">
+
+                            <label for="phone">
+                                Phone Number *
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="+234..."
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= SECTION 2 ================= -->
+
+                <div class="registration-form-section">
+
+                    <div class="registration-section-title">
+
+                        <span>02</span>
+
+                        <div>
+                            <h3>Programme Information</h3>
+                            <p>Select your academic programme.</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="registration-form-grid">
+
+                        <div class="registration-form-group">
+
+                            <label for="programme">
+                                Programme / Course of Study *
+                            </label>
+
+                            <select
+                                id="programme"
+                                name="programme"
+                                required
+                            >
+
+                                <option value="">
+                                    Select programme
+                                </option>
+
+                                <option value="Health Care Management">
+                                    Health Care Management
+                                </option>
+
+                                <option value="Caregiver Studies">
+                                    Caregiver Studies
+                                </option>
+
+                                <option value="Health Assistance">
+                                    Health Assistance
+                                </option>
+
+                                <option value="Medical Office Management">
+                                    Medical Office Management
+                                </option>
+
+                                <option value="Health Care Standards">
+                                    Health Care Standards
+                                </option>
+
+                                <option value="Caregiving">
+                                    Caregiving
+                                </option>
+
+                                <option value="Infection Control and Prevention">
+                                    Infection Control and Prevention
+                                </option>
+
+                                <option value="Medication Management and Administration">
+                                    Medication Management and Administration
+                                </option>
+
+                                <option value="Food Safety and Hygiene">
+                                    Food Safety and Hygiene
+                                </option>
+
+                                <option value="Infection Control in Health Care">
+                                    Infection Control in Health Care
+                                </option>
+
+                                <option value="HIPAA Compliance Essentials">
+                                    HIPAA Compliance Essentials
+                                </option>
+
+                                <option value="Clinical Neurophysiology">
+                                    Clinical Neurophysiology
+                                </option>
+
+                                <option value="Other Health Science Programme">
+                                    Other Health Science Programme
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="registration-form-group">
+
+                            <label for="academicLevel">
+                                Academic Level *
+                            </label>
+
+                            <select
+                                id="academicLevel"
+                                name="academic_level"
+                                required
+                            >
+
+                                <option value="">
+                                    Select level
+                                </option>
+
+                                <option value="Level 1">
+                                    Level 1
+                                </option>
+
+                                <option value="Level 2">
+                                    Level 2
+                                </option>
+
+                                <option value="Level 3">
+                                    Level 3
+                                </option>
+
+                                <option value="Level 4">
+                                    Level 4
+                                </option>
+
+                                <option value="Professional / Continuing Education">
+                                    Professional / Continuing Education
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="registration-form-group">
+
+                            <label for="academicSession">
+                                Academic Session *
+                            </label>
+
+                            <select
+                                id="academicSession"
+                                name="academic_session"
+                                required
+                            >
+
+                                <option value="">
+                                    Select session
+                                </option>
+
+                                <option value="2026/2027">
+                                    2026/2027
+                                </option>
+
+                                <option value="2027/2028">
+                                    2027/2028
+                                </option>
+
+                                <option value="2028/2029">
+                                    2028/2029
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="registration-form-group">
+
+                            <label for="studentType">
+                                Student Type *
+                            </label>
+
+                            <select
+                                id="studentType"
+                                name="student_type"
+                                required
+                            >
+
+                                <option value="">
+                                    Select student type
+                                </option>
+
+                                <option value="New Student">
+                                    New Student
+                                </option>
+
+                                <option value="Returning Student">
+                                    Returning Student
+                                </option>
+
+                                <option value="Transfer Student">
+                                    Transfer Student
+                                </option>
+
+                                <option value="Professional Learner">
+                                    Professional Learner
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= SECTION 3 ================= -->
+
+                <div class="registration-form-section">
+
+                    <div class="registration-section-title">
+
+                        <span>03</span>
+
+                        <div>
+                            <h3>Semester Registration</h3>
+
+                            <p>
+                                Select the semester you are registering for.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="semester-selection">
+
+                        <label class="semester-option">
+
+                            <input
+                                type="radio"
+                                name="semester"
+                                value="1st Semester"
+                                required
+                            >
+
+                            <span class="semester-card">
+
+                                <i class="fa-solid fa-1"></i>
+
+                                <strong>
+                                    1st Semester
+                                </strong>
+
+                                <small>
+                                    First semester courses
+                                </small>
+
+                            </span>
+
+                        </label>
+
+
+                        <label class="semester-option">
+
+                            <input
+                                type="radio"
+                                name="semester"
+                                value="2nd Semester"
+                            >
+
+                            <span class="semester-card">
+
+                                <i class="fa-solid fa-2"></i>
+
+                                <strong>
+                                    2nd Semester
+                                </strong>
+
+                                <small>
+                                    Second semester courses
+                                </small>
+
+                            </span>
+
+                        </label>
+
+
+                        <label class="semester-option">
+
+                            <input
+                                type="radio"
+                                name="semester"
+                                value="3rd Semester"
+                            >
+
+                            <span class="semester-card">
+
+                                <i class="fa-solid fa-3"></i>
+
+                                <strong>
+                                    3rd Semester
+                                </strong>
+
+                                <small>
+                                    Third semester courses
+                                </small>
+
+                            </span>
+
+                        </label>
+
+
+                        <label class="semester-option">
+
+                            <input
+                                type="radio"
+                                name="semester"
+                                value="4th Semester"
+                            >
+
+                            <span class="semester-card">
+
+                                <i class="fa-solid fa-4"></i>
+
+                                <strong>
+                                    4th Semester
+                                </strong>
+
+                                <small>
+                                    Fourth semester courses
+                                </small>
+
+                            </span>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= SECTION 4 ================= -->
+
+                <div class="registration-form-section">
+
+                    <div class="registration-section-title">
+
+                        <span>04</span>
+
+                        <div>
+
+                            <h3>Course Registration</h3>
+
+                            <p>
+                                Select at least four courses for this semester.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="course-registration-notice">
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        <span>
+                            You must select <strong>at least 4 courses</strong>.
+                            You may select more where applicable.
+                        </span>
+
+                    </div>
+
+
+                    <div class="course-selection-grid">
+
+
+                        <label class="course-checkbox">
+
+                            <input
+                                type="checkbox"
+                                name="courses[]"
+                                value="Health Care Management"
+                            >
+
+                            <span>
+                                Health Care Management
+                            </span>
+
+                        </label>
+
+
+                        <label class="course-checkbox">
+
+                            <input
+                                type="checkbox"
+                                name="courses[]"
+                                value="Caregiver Studies"
+                            >
+
+                            <span>
+                                Caregiver Studies
+                            </span>
+
+                        </label>
+
+
+                        <label class="course-checkbox">
+
+                            <input
+                                type="checkbox"
+                                name="courses[]"
+                                value="Health Assistance"
+                            >
+
+                            <span>
+                                Health Assistance
+                            </span>
+
+                        </label>
+
+
+                        <label class="course-checkbox">
+
+                            <input
+                                type="checkbox"
+                                name="courses[]"
+                                value="Medical Office Management"
+                            >
+
+                            <span>
+                                Medical Office Management
+                            </span>
+
+                        </label>
+
+
+                        <label class="course-checkbox">
+
+                            <input
+                                type="checkbox"
+                                name="courses[]"
+                                value="Health Care Standards"
+                            >
+
+                            <span>
+                                Health Care Standards
+                            </span>
+
+                        </label>
+
+
+                        <label class="course-checkbox">
+
+                            <input
+                                type="checkbox"
+                                name="courses[]"
+                                value="Caregiving"
+                            >
+
+                            <span>
+                                Caregiving
+                            </span>
+
+                        </label>
+
+
+                        <label class="course-checkbox">
+
+                            <input
+                                type="checkbox"
+                                name="courses[]"
+                                value="Essential Infection Control and Prevention Skills"
+                            >
+
+                            <span>
+                                Essential Infection Control and Prevention Skills
+                            </span>
+
+                        </label>
+
+
+                        <label class="course-checkbox">
+
+                            <input
+                                type="checkbox"
+                                name="courses[]"
+                                value="Medication Management and Administration"
+                            >
+
+                            <span>
+                                Medication Management and Administration
+                            </span>
+
+                        </label>
+
+
+                        <label class="course-checkbox">
+
+                            <input
+                                type="checkbox"
+                                name="courses[]"
+                                value="Food Safety and Hygiene"
+                            >
+
+                            <span>
+                                Food Safety and Hygiene
+                            </span>
+
+                        </label>
+
+
+                        <label class="course-checkbox">
+
+                            <input
+                                type="checkbox"
+                                name="courses[]"
+                                value="Infection Control in Health Care"
+                            >
+
+                            <span>
+                                Infection Control in Health Care
+                            </span>
+
+                        </label>
+
+
+                        <label class="course-checkbox">
+
+                            <input
+                                type="checkbox"
+                                name="courses[]"
+                                value="HIPAA Compliance Essentials"
+                            >
+
+                            <span>
+                                HIPAA Compliance Essentials
+                            </span>
+
+                        </label>
+
+
+                        <label class="course-checkbox">
+
+                            <input
+                                type="checkbox"
+                                name="courses[]"
+                                value="Bloodborne Pathogens (BBP)"
+                            >
+
+                            <span>
+                                Bloodborne Pathogens (BBP)
+                            </span>
+
+                        </label>
+
+
+                        <label class="course-checkbox">
+
+                            <input
+                                type="checkbox"
+                                name="courses[]"
+                                value="Elderly Care and Caring for the Disabled"
+                            >
+
+                            <span>
+                                Elderly Care and Caring for the Disabled
+                            </span>
+
+                        </label>
+
+
+                        <label class="course-checkbox">
+
+                            <input
+                                type="checkbox"
+                                name="courses[]"
+                                value="Dysphagia Awareness Training"
+                            >
+
+                            <span>
+                                Dysphagia Awareness Training
+                            </span>
+
+                        </label>
+
+
+                        <label class="course-checkbox">
+
+                            <input
+                                type="checkbox"
+                                name="courses[]"
+                                value="CPR, AED and First Aid"
+                            >
+
+                            <span>
+                                CPR, AED and First Aid
+                            </span>
+
+                        </label>
+
+
+                        <label class="course-checkbox">
+
+                            <input
+                                type="checkbox"
+                                name="courses[]"
+                                value="Clinical Neurophysiology"
+                            >
+
+                            <span>
+                                Clinical Neurophysiology
+                            </span>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= SECTION 5 ================= -->
+
+                <div class="registration-form-section">
+
+                    <div class="registration-section-title">
+
+                        <span>05</span>
+
+                        <div>
+
+                            <h3>Educational Background</h3>
+
+                            <p>
+                                Provide your previous educational information.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="registration-form-grid">
+
+                        <div class="registration-form-group">
+
+                            <label for="previousQualification">
+                                Highest Previous Qualification *
+                            </label>
+
+                            <select
+                                id="previousQualification"
+                                name="previous_qualification"
+                                required
+                            >
+
+                                <option value="">
+                                    Select qualification
+                                </option>
+
+                                <option value="Secondary School Certificate">
+                                    Secondary School Certificate
+                                </option>
+
+                                <option value="Certificate">
+                                    Certificate
+                                </option>
+
+                                <option value="Diploma">
+                                    Diploma
+                                </option>
+
+                                <option value="ND">
+                                    National Diploma (ND)
+                                </option>
+
+                                <option value="HND">
+                                    Higher National Diploma (HND)
+                                </option>
+
+                                <option value="Bachelor's Degree">
+                                    Bachelor's Degree
+                                </option>
+
+                                <option value="Master's Degree">
+                                    Master's Degree
+                                </option>
+
+                                <option value="Other">
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="registration-form-group">
+
+                            <label for="institution">
+                                Previous Institution
+                            </label>
+
+                            <input
+                                type="text"
+                                id="institution"
+                                name="previous_institution"
+                                placeholder="Name of institution"
+                            >
+
+                        </div>
+
+
+                        <div class="registration-form-group">
+
+                            <label for="yearCompleted">
+                                Year Completed
+                            </label>
+
+                            <input
+                                type="number"
+                                id="yearCompleted"
+                                name="year_completed"
+                                min="1950"
+                                max="2035"
+                                placeholder="e.g. 2025"
+                            >
+
+                        </div>
+
+
+                        <div class="registration-form-group">
+
+                            <label for="studyMode">
+                                Preferred Study Mode *
+                            </label>
+
+                            <select
+                                id="studyMode"
+                                name="study_mode"
+                                required
+                            >
+
+                                <option value="">
+                                    Select study mode
+                                </option>
+
+                                <option value="Online">
+                                    Online
+                                </option>
+
+                                <option value="Hybrid">
+                                    Hybrid
+                                </option>
+
+                                <option value="On-site">
+                                    On-site
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= SECTION 6 ================= -->
+
+                <div class="registration-form-section">
+
+                    <div class="registration-section-title">
+
+                        <span>06</span>
+
+                        <div>
+
+                            <h3>Address Information</h3>
+
+                            <p>
+                                Provide your current contact address.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="registration-form-grid">
+
+                        <div class="registration-form-group registration-full">
+
+                            <label for="address">
+                                Residential Address *
+                            </label>
+
+                            <textarea
+                                id="address"
+                                name="residential_address"
+                                rows="3"
+                                placeholder="Enter your residential address"
+                                required
+                            ></textarea>
+
+                        </div>
+
+
+                        <div class="registration-form-group">
+
+                            <label for="country">
+                                Country *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="country"
+                                name="country"
+                                value="Nigeria"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="registration-form-group">
+
+                            <label for="state">
+                                State *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="state"
+                                name="state"
+                                placeholder="Enter your state"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="registration-form-group">
+
+                            <label for="city">
+                                City / Town *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="city"
+                                name="city"
+                                placeholder="Enter your city or town"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= SECTION 7 ================= -->
+
+                <div class="registration-form-section">
+
+                    <div class="registration-section-title">
+
+                        <span>07</span>
+
+                        <div>
+
+                            <h3>Parent / Guardian / Emergency Contact</h3>
+
+                            <p>
+                                Provide a person we can contact when necessary.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="registration-form-grid">
+
+                        <div class="registration-form-group">
+
+                            <label for="guardianName">
+                                Full Name *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="guardianName"
+                                name="guardian_name"
+                                placeholder="Full name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="registration-form-group">
+
+                            <label for="relationship">
+                                Relationship *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="relationship"
+                                name="guardian_relationship"
+                                placeholder="e.g. Parent, Guardian, Sibling"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="registration-form-group">
+
+                            <label for="guardianPhone">
+                                Phone Number *
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="guardianPhone"
+                                name="guardian_phone"
+                                placeholder="+234..."
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="registration-form-group">
+
+                            <label for="guardianEmail">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="guardianEmail"
+                                name="guardian_email"
+                                placeholder="guardian@example.com"
+                            >
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= SECTION 8 ================= -->
+
+                <div class="registration-form-section">
+
+                    <div class="registration-section-title">
+
+                        <span>08</span>
+
+                        <div>
+
+                            <h3>Additional Information</h3>
+
+                            <p>
+                                Tell us anything else relevant to your registration.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="registration-form-grid">
+
+                        <div class="registration-form-group registration-full">
+
+                            <label for="howHeard">
+                                How did you hear about PKHealthScience?
+                            </label>
+
+                            <select
+                                id="howHeard"
+                                name="how_you_heard"
+                            >
+
+                                <option value="">
+                                    Select an option
+                                </option>
+
+                                <option value="Social Media">
+                                    Social Media
+                                </option>
+
+                                <option value="Friend or Family">
+                                    Friend or Family
+                                </option>
+
+                                <option value="School">
+                                    School
+                                </option>
+
+                                <option value="Search Engine">
+                                    Search Engine
+                                </option>
+
+                                <option value="WhatsApp">
+                                    WhatsApp
+                                </option>
+
+                                <option value="Referral">
+                                    Referral
+                                </option>
+
+                                <option value="Other">
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="registration-form-group registration-full">
+
+                            <label for="additionalInformation">
+                                Additional Information
+                            </label>
+
+                            <textarea
+                                id="additionalInformation"
+                                name="additional_information"
+                                rows="5"
+                                placeholder="Enter any additional information you would like us to know..."
+                            ></textarea>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= SECTION 9 ================= -->
+
+                <div class="registration-form-section">
+
+                    <div class="registration-section-title">
+
+                        <span>09</span>
+
+                        <div>
+
+                            <h3>Student Declaration</h3>
+
+                            <p>
+                                Please confirm your registration information.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="registration-declaration">
+
+                        <label class="registration-checkbox">
+
+                            <input
+                                type="checkbox"
+                                name="information_declaration"
+                                value="I confirm that the information provided is accurate"
+                                required
+                            >
+
+                            <span>
+                                I confirm that the information I have provided
+                                in this registration form is accurate and complete.
+                                *
+
+                            </span>
+
+                        </label>
+
+
+                        <label class="registration-checkbox">
+
+                            <input
+                                type="checkbox"
+                                name="data_processing_consent"
+                                value="I consent to processing of registration information"
+                                required
+                            >
+
+                            <span>
+                                I consent to PKHealthScience using my registration
+                                information for student registration, communication,
+                                academic administration and verification purposes. *
+
+                            </span>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= SUBMIT ================= -->
+
+                <div class="registration-submit-area">
+
+                    <div class="registration-submit-note">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <span>
+                            Please review your information before submitting.
+                        </span>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="registration-submit-btn"
+                    >
+
+                        <i class="fa-solid fa-paper-plane"></i>
+
+                        Submit Registration
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= BOTTOM CTA ================= -->
+
+<section class="registration-bottom-cta">
+
+    <div class="container">
+
+        <div class="registration-cta-content">
+
+            <div>
+
+                <span class="section-label">
+                    NEED HELP?
+                </span>
+
+                <h2>
+                    Have Questions About Registration?
+                </h2>
+
+                <p>
+                    Contact the PKHealthScience team if you need help
+                    choosing a programme, semester or course.
+                </p>
+
+            </div>
+
+            <a href="contact.html" class="registration-cta-btn">
+                Contact Us
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="logo">
+
+                    <span class="logo-icon">
+                        <i class="fa-solid fa-book-medical"></i>
+                    </span>
+
+                    <span class="logo-text">
+                        <strong>PKHealth</strong><span>Science</span>
+                    </span>
+
+                </a>
+
+                <p>
+                    A student-focused health science education platform
+                    designed to support learning, professional development
+                    and academic growth.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h4>Quick Links</h4>
+
+                <a href="index.html">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="registration.html">Registration</a>
+                <a href="https://www.saueverify.com.ng/">Student Verification</a>
+                <a href="assessment.html">Assessment</a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h4>Support</h4>
+
+                <a href="contact.html">Contact</a>
+                <a href="about.html">About</a>
+                <a href="consultants.html">Consultants</a>
+                <a href="login.html">Login</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 PKHealthScience. All rights reserved.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
